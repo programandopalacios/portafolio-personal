@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path d="M16 2.4l11.547 6.667v13.333L16 29.067 4.453 22.4V9.067z" fill="#339933"/>
+  <path d="M16 5.333l8.727 5.04v10.08L16 25.493l-8.727-5.04V10.373z" fill="#339933"/>
+  <path d="M10.933 19.813V12.4l5.04-2.907 5.04 2.907v7.413L16 22.72z" fill="none" stroke="#fff" stroke-width=".8"/>
+  <text x="16" y="17.5" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="5.5" font-weight="bold">Node</text>
+</svg>

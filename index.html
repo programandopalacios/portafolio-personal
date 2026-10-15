@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio personal de Marlon David Palacios Parra – Desarrollador de Software." />
+  <title>Marlon David Palacios Parra | Desarrollador de Software</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       NAVBAR
+  =========================== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-logo" aria-label="Inicio">
+        <img src="assets/images/logotipo.jpeg" alt="Logotipo Marlon David" class="nav-logo-img" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#inicio"    class="nav-link active">Inicio</a></li>
+        <li><a href="#sobre-mi"  class="nav-link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto"  class="nav-link">Contacto</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===========================
+         HERO SECTION
+    =========================== -->
+    <section class="hero" id="inicio" aria-label="Presentación principal">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Contenido izquierdo -->
+        <div class="hero-content">
+          <p class="hero-greeting">HOLA, SOY</p>
+          <h1 class="hero-name">
+            Marlon David<br />
+            Palacios Parra
+          </h1>
+          <p class="hero-role">DESARROLLADOR DE SOFTWARE</p>
+          <p class="hero-description">
+            El código cambia y las tecnologías evolucionan. 
+Pero las ganas de aprender nunca terminan; desarrollar software es seguir aprendiendo, 
+creando y encontrando siempre una forma de hacerlo posible.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">
+              Ver Proyectos
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+          </div>
+
+          <!-- Métricas -->
+          <div class="hero-metrics" role="list">
+            <div class="metric" role="listitem">
+              <img src="assets/icons/08_carpeta.png" alt="" aria-hidden="true" class="metric-icon" />
+              <span class="metric-value">+3</span>
+              <span class="metric-label-primary">PROYECTOS</span>
+              <span class="metric-label-secondary">Desarrollados</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric" role="listitem">
+              <img src="assets/icons/09_birrete.png" alt="" aria-hidden="true" class="metric-icon" />
+              <span class="metric-value">SENA</span>
+              <span class="metric-label-primary">FORMACIÓN</span>
+              <span class="metric-label-secondary">Certificada</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric" role="listitem">
+              <img src="assets/icons/12_globo_www.png" alt="" aria-hidden="true" class="metric-icon" />
+              <span class="metric-value">WEB</span>
+              <span class="metric-label-primary">DESARROLLO</span>
+              <span class="metric-label-secondary">Tecnológico</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric" role="listitem">
+              <img src="assets/icons/38_infinito.png" alt="" aria-hidden="true" class="metric-icon" />
+              <span class="metric-value">∞</span>
+              <span class="metric-label-primary">EVOLUCIÓN</span>
+              <span class="metric-label-secondary">Constante</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen / Foto de perfil -->
+        <div class="hero-image-wrapper" aria-label="Foto de perfil">
+          <div class="hero-image-frame">
+            <img
+              src="assets/images/foto_personal.jpg"
+              alt="Marlon David Palacios Parra"
+              class="hero-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="image-placeholder hero-placeholder" style="display:none;" aria-label="Espacio para foto de perfil">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#A1A1AA" stroke-width="1.5" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Agregar foto aquí</span>
+            </div>
+          </div>
+
+          <!-- Íconos flotantes decorativos -->
+          <div class="floating-icon floating-icon--code" aria-hidden="true">
+            <img src="assets/icons/().png" width="24" height="24" alt="" class="floating-icon-img" />
+          </div>
+          <div class="floating-icon floating-icon--settings" aria-hidden="true">
+            <img src="assets/icons/configuración.png" width="22" height="22" alt="" class="floating-icon-img" />
+          </div>
+          <div class="floating-icon floating-icon--db" aria-hidden="true">
+            <img src="assets/icons/monedas.png" width="22" height="22" alt="" class="floating-icon-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         SOBRE MÍ
+    =========================== -->
+    <section class="about" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-container">
+
+        <!-- Encabezado de sección -->
+        <div class="section-label">01. SOBRE MÍ</div>
+
+        <div class="about-grid">
+          <!-- Texto izquierdo -->
+          <div class="about-content">
+            <h2 id="about-title" class="about-title">
+              Construyendo el<br />
+              <span class="text-accent">futuro con código</span>
+            </h2>
+            <p class="about-description">
+              Tecnólogo en Desarrollo de Software, apasionado por aprender,
+              crear y convertir ideas en soluciones digitales.
+            </p>
+            <p class="about-description about-description--secondary">
+              Me gusta enfrentar nuevos retos, explorar tecnologías y entender
+              cómo cada línea de código puede convertirse en algo útil para las
+              personas. Mi camino en el desarrollo ha estado marcado por el
+              aprendizaje constante, la curiosidad y las ganas de seguir creciendo.
+            </p>
+
+            <ul class="about-focuses" aria-label="Áreas de enfoque">
+              <li>
+                <img src="assets/icons/11_portatil_codigo.png" width="16" height="16" alt="" aria-hidden="true" class="focus-icon" />
+                Desarrollo Web
+              </li>
+              <li>
+                <img src="assets/icons/39_portatil_engranajes.png" width="16" height="16" alt="" aria-hidden="true" class="focus-icon" />
+                Soluciones reales
+              </li>
+              <li>
+                <img src="assets/icons/19_apreton_manos.png" width="16" height="16" alt="" aria-hidden="true" class="focus-icon" />
+                Trabajo en equipo
+              </li>
+              <li>
+                <img src="assets/icons/38_infinito.png" width="16" height="16" alt="" aria-hidden="true" class="focus-icon" />
+                Aprendizaje continuo
+              </li>
+            </ul>
+
+            <a href="#contacto" class="btn btn-secondary btn-outline">
+              Conoce mi historia
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <!-- Video logotipo (reemplaza placeholder de foto) -->
+          <div class="about-image-wrapper" aria-label="Video logotipo">
+            <div class="about-image-frame about-video-frame">
+              <video
+                src="assets/images/video_logotipo.mp4"
+                class="about-video"
+                autoplay
+                loop
+                muted
+                playsinline
+                aria-label="Animación de logotipo"
+              ></video>
+            </div>
+          </div>
+
+          <!-- Tarjetas derechas -->
+          <div class="about-cards" role="list">
+            <article class="about-card" role="listitem">
+              <div class="about-card-icon" aria-hidden="true">
+                <img src="assets/icons/09_birrete.png" width="20" height="20" alt="" class="card-icon-img" />
+              </div>
+              <p>Tecnólogo en Desarrollo de Software – SENA</p>
+            </article>
+            <article class="about-card" role="listitem">
+              <div class="about-card-icon" aria-hidden="true">
+                <img src="assets/icons/11_portatil_codigo.png" width="20" height="20" alt="" class="card-icon-img" />
+              </div>
+              <p>Desarrollo de aplicaciones web y soluciones digitales</p>
+            </article>
+            <article class="about-card" role="listitem">
+              <div class="about-card-icon" aria-hidden="true">
+                <img src="assets/icons/03_bombillo.png" width="20" height="20" alt="" class="card-icon-img" />
+              </div>
+              <p>Enfoque en innovación y nuevas tecnologías</p>
+            </article>
+            <article class="about-card" role="listitem">
+              <div class="about-card-icon" aria-hidden="true">
+                <img src="assets/icons/16_crecimiento.png" width="20" height="20" alt="" class="card-icon-img" />
+              </div>
+              <p>Comprometido con el aprendizaje continuo</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         HABILIDADES / STACK
+    =========================== -->
+    <section class="skills" id="habilidades" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-label">02. STACK TECNOLÓGICO</div>
+
+        <div class="skills-header">
+          <h2 id="skills-title" class="section-title">Habilidades</h2>
+
+          <div class="skills-filters" role="group" aria-label="Filtrar tecnologías">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="tools">Herramientas</button>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid" role="list">
+
+          <!-- Frontend -->
+          <article class="skill-card" data-category="frontend" role="listitem">
+            <div class="skill-icon html5" aria-hidden="true">
+              <img src="assets/icons/html5.svg" alt="" />
+            </div>
+            <span class="skill-name">HTML5</span>
+          </article>
+
+          <article class="skill-card" data-category="frontend" role="listitem">
+            <div class="skill-icon css3" aria-hidden="true">
+              <img src="assets/icons/css3.svg" alt="" />
+            </div>
+            <span class="skill-name">CSS3</span>
+          </article>
+
+          <article class="skill-card" data-category="frontend" role="listitem">
+            <div class="skill-icon js" aria-hidden="true">
+              <img src="assets/icons/javascript.svg" alt="" />
+            </div>
+            <span class="skill-name">JavaScript</span>
+          </article>
+
+          <article class="skill-card" data-category="frontend" role="listitem">
+            <div class="skill-icon react" aria-hidden="true">
+              <img src="assets/icons/react.svg" alt="" />
+            </div>
+            <span class="skill-name">React</span>
+          </article>
+
+          <article class="skill-card" data-category="backend" role="listitem">
+            <div class="skill-icon nodejs" aria-hidden="true">
+              <img src="assets/icons/nodejs.svg" alt="" />
+            </div>
+            <span class="skill-name">Node.js</span>
+          </article>
+
+          <article class="skill-card" data-category="backend" role="listitem">
+            <div class="skill-icon express" aria-hidden="true">
+              <span class="skill-text-icon">Express</span>
+            </div>
+            <span class="skill-name">Express</span>
+          </article>
+
+          <article class="skill-card" data-category="backend" role="listitem">
+            <div class="skill-icon mysql" aria-hidden="true">
+              <img src="assets/icons/mysql.svg" alt="" />
+            </div>
+            <span class="skill-name">MySQL</span>
+          </article>
+
+          <article class="skill-card" data-category="backend" role="listitem">
+            <div class="skill-icon mongodb" aria-hidden="true">
+              <img src="assets/icons/mongodb.svg" alt="" />
+            </div>
+            <span class="skill-name">MongoDB</span>
+          </article>
+
+          <article class="skill-card" data-category="tools" role="listitem">
+            <div class="skill-icon github" aria-hidden="true">
+              <img src="assets/icons/github.svg" alt="" />
+            </div>
+            <span class="skill-name">GitHub</span>
+          </article>
+
+          <article class="skill-card" data-category="tools" role="listitem">
+            <div class="skill-icon vscode" aria-hidden="true">
+              <img src="assets/icons/vscode.svg" alt="" />
+            </div>
+            <span class="skill-name">VS Code</span>
+          </article>
+
+          <article class="skill-card" data-category="frontend" role="listitem">
+            <div class="skill-icon tailwind" aria-hidden="true">
+              <img src="assets/icons/tailwind.svg" alt="" />
+            </div>
+            <span class="skill-name">Tailwind CSS</span>
+          </article>
+
+          <article class="skill-card" data-category="frontend" role="listitem">
+            <div class="skill-icon typescript" aria-hidden="true">
+              <span class="skill-badge-icon">TS</span>
+            </div>
+            <span class="skill-name">TypeScript</span>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         PROYECTOS
+    =========================== -->
+    <section class="projects" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-label">03. PROYECTOS DESTACADOS</div>
+
+        <div class="projects-header">
+          <h2 id="projects-title" class="section-title">Proyectos que generan impacto</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Proyecto 1 -->
+          <article class="project-card">
+            <div class="project-image" aria-label="Vista previa Palm Black Barbería">
+              <img
+                src="assets/images/evidencia-barberia.png"
+                alt="Palm Black Barbería"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+              />
+              <div class="image-placeholder project-placeholder" style="display:none;" aria-label="Espacio para captura de pantalla">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#A1A1AA" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Agregar captura de pantalla</span>
+              </div>
+              <div class="project-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" style="text-align: center;">Palm Black Barbería</h3>
+              <p class="project-description">Plataforma web profesional para una barbería con sistema de agendamiento integrando Google Calendar.</p>
+              <div class="project-tags" aria-label="Tecnologías utilizadas">
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Google Calendar API</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://palmblack.vercel.app/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                  Visitar Sitio
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project-card">
+            <div class="project-image" aria-label="Vista previa E-commerce">
+              <img
+                src="assets/images/project-ecommerce.jpg"
+                alt="E-commerce"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+              />
+              <div class="image-placeholder project-placeholder" style="display:none;" aria-label="Espacio para captura de pantalla">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#A1A1AA" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Agregar captura de pantalla</span>
+              </div>
+              <div class="project-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-commerce</h3>
+              <p class="project-description">Tienda online con carrito de compras y pasarela de pagos.</p>
+              <div class="project-tags" aria-label="Tecnologías utilizadas">
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                  Ver Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project-card">
+            <div class="project-image" aria-label="Vista previa Sistema de Reservas">
+              <img
+                src="assets/images/project-reservas.jpg"
+                alt="Sistema de Reservas"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+              />
+              <div class="image-placeholder project-placeholder" style="display:none;" aria-label="Espacio para captura de pantalla">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#A1A1AA" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Agregar captura de pantalla</span>
+              </div>
+              <div class="project-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistema de Reservas</h3>
+              <p class="project-description">Plataforma de reservas para servicios con panel administrativo.</p>
+              <div class="project-tags" aria-label="Tecnologías utilizadas">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                  Ver Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         CONTACTO
+    =========================== -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-container">
+
+        <!-- Info izquierda -->
+        <div class="contact-info">
+          <div class="section-label">04. CONTACTO</div>
+          <h2 id="contact-title" class="section-title">¿Hablemos?</h2>
+          <p class="contact-description">
+            Si tienes un proyecto, una idea o una oportunidad en mente,
+            estoy dispuesto a conocerla y explorar cómo podemos llevarla
+            a la realidad mediante el desarrollo de software.
+          </p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Formulario de contacto">
+            <!-- Web3Forms: campos de configuración -->
+            <input type="hidden" name="access_key" value="712e519c-c868-4bd6-bdd9-7391bb872498" />
+            <input type="hidden" name="subject" value="Nuevo mensaje desde mi portafolio" />
+            <input type="hidden" name="from_name" value="Portafolio de Marlon Palacios" />
+            <!-- Honeypot anti-spam (Web3Forms botcheck): invisible para usuarios, visible para bots -->
+            <input type="checkbox" name="botcheck" class="sr-only" aria-hidden="true" tabindex="-1" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName" class="sr-only">Nombre</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  placeholder="Nombre"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="sr-only">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  placeholder="Correo electrónico"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="sr-only">Mensaje</label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                placeholder="Mensaje"
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-send">
+              Enviar mensaje
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <p class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="assets/images/logotipo.jpeg" alt="Logotipo Marlon David" class="footer-logo-img" />
+        <div>
+          <p class="footer-name">Marlon David Palacios Parra</p>
+          <p class="footer-role-text">Desarrollador de Software</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="footer-social" aria-label="Redes sociales">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="assets/icons/24_linkedin.png" width="18" height="18" alt="" class="footer-social-icon" />
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="assets/icons/25_github.png" width="18" height="18" alt="" class="footer-social-icon" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="assets/icons/23_instagram.png" width="18" height="18" alt="" class="footer-social-icon" />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        <img src="assets/icons/32_derechos_autor.png" width="14" height="14" alt="" aria-hidden="true" class="copyright-icon" />
+        2026 Marlon Palacios. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a
+    href="https://wa.me/573137980409?text=Hola%2C%20Marlon%2C%20vi%20tu%20portafolio%20web%20y%20me%20gustar%C3%ADa%20conversar%20contigo."
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contáctame por WhatsApp"
+  >
+    <img
+      src="assets/images/WhatsApp_logo.svg"
+      alt="WhatsApp"
+      class="whatsapp-fab__icon"
+    />
+  </a>
+
+  <!-- Script principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>

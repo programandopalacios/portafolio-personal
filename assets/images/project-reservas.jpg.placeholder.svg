@@ -1,0 +1,19 @@
+<!-- Reemplaza con captura del proyecto: project-reservas.jpg (600×360 px recomendado) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect width="600" height="360" fill="#161618"/>
+  <rect x="1" y="1" width="598" height="358" fill="none" stroke="#27272A" stroke-width="1.5" stroke-dasharray="10 5"/>
+  <rect x="60" y="60" width="480" height="240" rx="8" fill="#1F1F23" stroke="#27272A" stroke-width="1"/>
+  <rect x="60" y="60" width="480" height="28" rx="8" fill="#27272A"/>
+  <circle cx="80" cy="74" r="5" fill="#f87171"/>
+  <circle cx="96" cy="74" r="5" fill="#fbbf24"/>
+  <circle cx="112" cy="74" r="5" fill="#4ade80"/>
+  <rect x="140" y="66" width="280" height="16" rx="4" fill="#161618"/>
+  <!-- Tabla / calendario simulado -->
+  <rect x="80" y="100" width="440" height="20" rx="3" fill="#27272A"/>
+  <rect x="80" y="128" width="440" height="16" rx="3" fill="#27272A" opacity=".5"/>
+  <rect x="80" y="152" width="440" height="16" rx="3" fill="#27272A" opacity=".5"/>
+  <rect x="80" y="176" width="440" height="16" rx="3" fill="#27272A" opacity=".5"/>
+  <rect x="80" y="200" width="180" height="28" rx="5" fill="#3f3f46"/>
+  <text x="300" y="248" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="#A1A1AA">Sistema de Reservas</text>
+  <text x="300" y="266" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#52525B">Agregar captura de pantalla · project-reservas.jpg</text>
+</svg>
