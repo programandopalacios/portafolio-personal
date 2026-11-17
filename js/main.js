@@ -7,9 +7,11 @@
  *  2. Active nav link según sección visible (IntersectionObserver)
  *  3. Toggle de tema claro / oscuro (persiste en localStorage)
  *  4. Filtros de habilidades con animación suave
- *  5. Animaciones de entrada (fade-up) al hacer scroll
- *  6. Formulario de contacto con validación básica
- *  7. Cerrar menú al hacer clic en un enlace (móvil)
+ *  5. Carrusel continuo de proyectos
+ *  6. Animaciones de entrada (fade-up) al hacer scroll
+ *  7. Formulario de contacto con validación básica
+ *  8. Cerrar menú al hacer clic en un enlace (móvil)
+ *  9. Scroll suave
  */
 
 'use strict';
@@ -174,7 +176,50 @@ const addSkillKeyframe = () => {
   document.head.appendChild(style);
 };
 
-/* ─── 5. ANIMACIONES FADE-UP AL SCROLL ────────────────────── */
+/* ─── 5. CARRUSEL CONTINUO DE PROYECTOS ──────────────────── */
+
+const initProjectCarousel = () => {
+  const grid = $('#proyectos .projects-grid');
+  if (!grid || grid.dataset.carouselInitialized) return;
+
+  const cards = [...grid.children].filter(child => child.classList.contains('project-card'));
+  if (cards.length < 2) return;
+
+  grid.dataset.carouselInitialized = 'true';
+
+  const track = document.createElement('div');
+  track.className = 'projects-track';
+
+  const group = document.createElement('div');
+  group.className = 'projects-group';
+  cards.forEach(card => group.appendChild(card));
+  track.appendChild(group);
+
+  const clone = group.cloneNode(true);
+  clone.classList.add('projects-group--clone');
+  clone.setAttribute('aria-hidden', 'true');
+  clone.dataset.carouselClone = 'true';
+  clone.querySelectorAll('a, button, input, select, textarea, [tabindex]').forEach(element => {
+    element.setAttribute('tabindex', '-1');
+  });
+  track.appendChild(clone);
+  grid.appendChild(track);
+
+  const updateCardWidths = () => {
+    const styles = getComputedStyle(grid);
+    const gap = parseFloat(getComputedStyle(group).columnGap) || 0;
+    const columns = parseFloat(styles.getPropertyValue('--project-columns')) || 4;
+    const cardWidth = (grid.clientWidth - gap * (columns - 1)) / columns;
+    if (cardWidth <= 0) return;
+
+    grid.style.setProperty('--project-card-width', `${cardWidth}px`);
+  };
+
+  updateCardWidths();
+  window.addEventListener('resize', updateCardWidths, { passive: true });
+};
+
+/* ─── 6. ANIMACIONES FADE-UP AL SCROLL ────────────────────── */
 
 const initFadeUp = () => {
   /* Elementos que recibirán la animación */
@@ -225,7 +270,7 @@ const initFadeUp = () => {
   allTargets.forEach(el => observer.observe(el));
 };
 
-/* ─── 6. FORMULARIO DE CONTACTO – Web3Forms ──────────────── */
+/* ─── 7. FORMULARIO DE CONTACTO – Web3Forms ──────────────── */
 
 const initContactForm = () => {
   const form     = $('#contactForm');
@@ -307,7 +352,7 @@ const initContactForm = () => {
   });
 };
 
-/* ─── 7. CERRAR MENÚ MÓVIL AL HACER CLIC EN ENLACE ──────── */
+/* ─── 8. CERRAR MENÚ MÓVIL AL HACER CLIC EN ENLACE ──────── */
 
 const initMobileMenuClose = () => {
   const navLinks  = $$('.nav-link');
@@ -329,7 +374,7 @@ const initMobileMenuClose = () => {
   });
 };
 
-/* ─── 8. SMOOTH SCROLL para navegadores sin soporte nativo ── */
+/* ─── 9. SMOOTH SCROLL para navegadores sin soporte nativo ── */
 
 const initSmoothScroll = () => {
   /* CSS scroll-behavior ya lo maneja; esto es fallback */
@@ -354,6 +399,7 @@ const init = () => {
   initActiveLinks();
   initThemeToggle();
   initSkillsFilter();
+  initProjectCarousel();
   initFadeUp();
   initContactForm();
   initMobileMenuClose();
